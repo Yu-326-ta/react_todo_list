@@ -1,5 +1,5 @@
 ## DEMO
-![タスク追加画面](images/todolist.jpg)
+![タスク追加画面](images/todo.jpg)
 ## 起動方法
 
 ```
