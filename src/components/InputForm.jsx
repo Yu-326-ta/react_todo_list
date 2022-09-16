@@ -6,11 +6,15 @@ export const InputForm = ({taskList, setTaskList}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    if (inputText === "") {
+      return;
+    }
     setTaskList([
       ...taskList,
       {
-        text: inputText
+        id: taskList.length,
+        text: inputText,
+        completed: false,
       }
     ]);
     setInputText("");
